@@ -1,16 +1,100 @@
-# flutter_calc
+# Мобильные лабораторные работы
 
-A new Flutter project.
+Репозиторий для хранения всех лабораторных работ по мобильной разработке.
 
-## Getting Started
+## Структура репозитория
 
-This project is a starting point for a Flutter application.
+```
+moblab/
+├── lab1_calculator/     # Лабораторная работа 1: Калькулятор
+├── lab2_*/              # Лабораторная работа 2
+├── lab3_*/              # Лабораторная работа 3
+└── README.md            # Этот файл
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Текущие лабораторные работы
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Lab 1: Калькулятор (текущий проект)
+- **Папка**: `flutter_calc/` (корень репозитория)
+- **Описание**: Flutter приложение - калькулятор
+- **Технологии**: Flutter, Dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Как добавить новую лабораторную работу
+
+### Вариант 1: Создать новую папку для новой работы
+
+1. Создайте новую папку для лабораторной работы:
+   ```bash
+   mkdir lab2_todo
+   cd lab2_todo
+   ```
+
+2. Создайте новый Flutter проект внутри папки:
+   ```bash
+   flutter create .
+   ```
+
+3. Добавьте изменения в Git:
+   ```bash
+   git add lab2_todo/
+   git commit -m "Добавлена лабораторная работа 2: Todo приложение"
+   git push
+   ```
+
+### Вариант 2: Использовать ветки Git (альтернативный подход)
+
+Если каждая лабораторная работа - это отдельный большой проект, можно использовать ветки:
+
+```bash
+# Создать новую ветку для лабораторной работы 2
+git checkout -b lab2_todo
+
+# Работать над проектом...
+
+# Отправить ветку на GitHub
+git push -u origin lab2_todo
+
+# Переключиться обратно на основную ветку
+git checkout main
+```
+
+## Переключение между лабораторными работами
+
+### Если используете папки (рекомендуется):
+Просто перейдите в нужную папку:
+```bash
+cd lab1_calculator  # или lab2_todo, lab3_weather и т.д.
+```
+
+### Если используете ветки:
+```bash
+git checkout lab1_calculator  # переключиться на работу 1
+git checkout lab2_todo        # переключиться на работу 2
+git checkout main             # вернуться на основную ветку
+```
+
+## Работа с Git
+
+### Основные команды:
+```bash
+# Проверить статус
+git status
+
+# Добавить изменения
+git add .
+
+# Создать коммит
+git commit -m "Описание изменений"
+
+# Отправить на GitHub
+git push
+
+# Получить обновления с GitHub
+git pull
+```
+
+## Примечания
+
+- Каждая лабораторная работа должна быть в отдельной папке или ветке
+- Обновляйте этот README при добавлении новых работ
+- Используйте понятные названия для папок/веток (lab1_*, lab2_* и т.д.)
